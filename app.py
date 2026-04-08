@@ -18,7 +18,7 @@ DEV_CREDIT = "@mahfuj_offcial_143"
 
 # ---------- Version fetching with simple TTL cache ----------
 _versions_cache = {
-    "ob_version": "OB52",
+    "ob_version": "OB53",
     "client_version": "1.123.2",
     "last_fetch": 0
 }
