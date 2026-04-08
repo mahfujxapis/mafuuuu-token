@@ -19,7 +19,7 @@ DEV_CREDIT = "@mahfuj_offcial_143"
 # ---------- Version fetching with simple TTL cache ----------
 _versions_cache = {
     "ob_version": "OB53",
-    "client_version": "1.123.2",
+    "client_version": "2.123.1",
     "last_fetch": 0
 }
 
@@ -37,7 +37,7 @@ def get_versions():
             if resp.status_code == 200:
                 data = resp.json()
                 _versions_cache["ob_version"] = data.get("ob_version", "OB52")
-                _versions_cache["client_version"] = data.get("client_version", "1.123.2")
+                _versions_cache["client_version"] = data.get("client_version", "2.123.1")
                 _versions_cache["last_fetch"] = now
         except Exception:
             # Fetch fail – purana hi rakho ya default
